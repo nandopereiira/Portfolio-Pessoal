@@ -651,9 +651,14 @@ nav ul li a:hover:before {
   background: url(/assets/img/photo1.jpg) no-repeat center;
   width: 250px;
   height: 250px;
-  border-radius: 50%;
+  border-radius: 50%; 
+}
+.photo-area img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;  
   border: 5px solid var(--second-text-color);
-  background-size: cover; 
+  background-size: cover;  
 }
  /* SETA CSS */
  .seta {
