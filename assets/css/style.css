@@ -648,7 +648,7 @@ nav ul li a:hover:before {
   display: none;
 }
 .photo-area {
-  background: url(/assets/img/photo1.jpg) no-repeat center;
+  background: url(./assets/img/photo1.jpg) no-repeat center;
   width: 250px;
   height: 250px;
   border-radius: 50%;
