@@ -840,6 +840,7 @@ nav ul li a:hover:before {
 	transform: translateY(30px);
 	opacity: 0;
 	transition: all 0.3s ease-out;
+  color: var(--primary-text-color);
 }
 .ui-card .description p{
 	transform: translateY(30px);
@@ -1243,8 +1244,7 @@ body.dark-theme .ui-card .description .demo-card{
   margin: 05px 15px;
   padding: 20px 30px;  
   overflow-y: auto;  
-  border-radius: 10px;
-  box-shadow: var(--shadow);
+  border-radius: 10px;  
   transition: 0.4s ease-in-out;
 }
 .testimonial-card img {
@@ -1268,6 +1268,7 @@ body.dark-theme .ui-card .description .demo-card{
 .testimonial-card:hover {
   background: var(--second-text-color);
   color:var(--primary-text-color);
+  box-shadow: var(--shadow-hover);  
 }
 .testimonial-card:hover.testimonial-card img{
   border:6px solid #fff;
@@ -1276,6 +1277,7 @@ body.dark-theme .ui-card .description .demo-card{
 .testimonial-card:hover.testimonial-card p,.testimonial-card:hover.testimonial-card h3{
   opacity: 1;
   transform: scale(1.1);
+  color: #fff;
 }
 @media (max-width:800px) {
   .testimonial-box {
