@@ -120,7 +120,7 @@ header {
   position: fixed;
   width: 100vw;
   height: 11vh;
-  padding: 15px 40px 15px 25px;
+  padding: 15px 50px 15px 50px;
   display: flex;  
   align-items: center;
   justify-content: space-between;
@@ -567,7 +567,7 @@ nav ul li a:hover:before {
   margin-bottom: 20px;
 }
 .hand img {
-  width: 27px;
+  width: 22px;
   animation: hand 2s infinite;
   animation-timing-function: ease-in-out; 
 }
@@ -1230,7 +1230,7 @@ body.dark-theme .ui-card .description .demo-card{
 }
 .testimonial-box {
   max-width: 990px;
-  padding:80px 0 40px 0;
+  padding:30px 0 40px 0;
   display: flex;
   align-items: center;
 }
@@ -1560,53 +1560,7 @@ footer{
 
 /*----------------------- RESPONSIVIDADE ----------------------------*/
 @media (max-width:960px) {
-  .container-principal {
-    flex-direction: row;
-    justify-content: center;    
-    align-items: center;  
-    text-align: center; 
-    flex-wrap: wrap;
-  } 
-  .container-left {  
-    justify-content: left;
-    text-align: left;
-    margin-right: 20px;
-  }
-  .container-social {
-    display: none;
-  }
-  .container-social-mobile {
-    flex-direction: row;
-    display: flex;   
-    margin: 80px 0;
-  }
-  .ola-mundo{
-    margin: 50px 0 0 0 ;
-    font-size: 28px;
-  }
-  .name-area {
-    font-size: 33px;
-    font-weight: 700;
-  }
-  .name-area span {
-    font-size: 35px;
-    font-weight: 700;
-  }
-  .work-area {
-    margin: 5px 0;
-    font-size: 25px;
-  }
-  .photo-area {  
-    margin: 30px 0 0 0 ; 
-    width: 180px;
-    height: 180px;
-   }  
-}
 
-@media (max-width:800px) {
-  header {
-    padding-right:40px;
-  }
   nav ul {
     position: absolute;
     width: 0;
@@ -1679,24 +1633,24 @@ footer{
   /* MENU MOBILE CSS */
 
   nav.active .btn-menu, .btn-menu {
-  cursor: pointer;
-  z-index: 999;
-  transition: .4s ease;
-  width:30px ;
-  height: 31px;
-  background: none;
-  box-shadow: none;
-  border-radius: 50%;
-  padding: 05px;
-  padding: auto; 
+    cursor: pointer;
+    z-index: 999;
+    transition: .4s ease;
+    width:30px ;
+    height: 31px;
+    background: none;
+    box-shadow: none;
+    border-radius: 50%;
+    padding: 05px;
+    padding: auto; 
   } 
   nav.active .btn-menu {  
-  background: #2c2c2c;
-  box-shadow: var(--shadow);    
+    background: #2c2c2c;
+    box-shadow: var(--shadow);    
   } 
   nav.active .btn-menu:hover {    
     box-shadow: var(--shadow-hover);  
-    } 
+  } 
   nav .btn-menu-line1, .btn-menu-line2,.btn-menu-line3 {
     width: 20px;
     height: 2px;
@@ -1720,6 +1674,59 @@ footer{
     transform: rotate(-135deg);   
     top:-6px;
   }
+
+  .container-principal {
+    flex-direction: row;
+    justify-content: center;    
+    align-items: center;  
+    text-align: center; 
+    flex-wrap: wrap;
+  } 
+  .container-left {  
+    justify-content: left;
+    text-align: left;
+    margin-right: 20px;
+  }
+  .container-social {
+    display: none;
+  }
+  .container-social-mobile {
+    flex-direction: row;
+    display: flex;   
+    margin: 80px 0;
+  }
+  .ola-mundo{
+    margin: 50px 0 0 0 ;
+    font-size: 28px;
+  }
+  .name-area {
+    font-size: 33px;
+    font-weight: 700;
+  }
+  .name-area span {
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .work-area {
+    margin: 5px 0;
+    font-size: 25px;
+  }
+  .photo-area {  
+    margin: 30px 0 0 0 ; 
+    width: 180px;
+    height: 180px;
+  }
+  .photo-area img {
+    width: 180px;
+    height: 180px;    
+  }  
+}
+
+@media (max-width:800px) {
+  header {
+    padding-right:50px;
+  }
+
   
   /* ------------------------------------ABOUT SECTION ----------------------------- */
   .about-area {
@@ -1782,6 +1789,10 @@ footer{
    margin: 20px 0;
    width: 160px;
    height: 160px;
+  }
+  .photo-area img {
+    width: 160px;
+    height: 160px;    
   }
   .seta {
     display: none;

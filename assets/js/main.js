@@ -111,7 +111,7 @@ closedCustomIcon.addEventListener('click', () => {
 
 // --------------------------- SCROLL REVEAL -----------------------
 window.sr = ScrollReveal({
-  reset: true,
+  reset: false,
   distance: '60px',
   duration: 1100,
   delay: 100
@@ -190,7 +190,7 @@ sr.reveal('.skill-area-right', {
 });
 
 sr.reveal('.wrapper', {
-  origin:'bottom',  
+  origin:'right',  
   delay:100,  
   duration: 2000
 });
