@@ -786,7 +786,7 @@ nav ul li a:hover:before {
 }
 .mold-ui-card {
   width: 280px;
-  height: 330px;
+  height: 280px;
   background: var(--black-white);
   display: flex;
   justify-content: center;
@@ -799,17 +799,17 @@ nav ul li a:hover:before {
   box-shadow: var(--shadow);
 }
 .ui-card{
-  width: 265px;
-  height: 315px;
-  margin: 15px;
+  width: 270px;
+  height: 270px;
+  margin: 10px;
   position: relative;
 	overflow: hidden;
 	transition: all 0.3s ease-out;
   border-radius: 10px; 
 }
 .ui-card img{
-  width: 250px;
-  height: 250px;
+  width: 260px;
+  height: 200px;
 	transform: scale(1);
 	transition: all 0.3s ease-out;  
   box-shadow: inset var(--shadow-hover);
@@ -922,11 +922,11 @@ body.dark-theme .ui-card .description .demo-card{
 }
 .ui-card:hover .description h3{
 	opacity: 1;
-	transform: translateY(-90px);
+	transform: translateY(-70px);
 }
 .ui-card:hover .description p{
 	opacity: 1;
-	transform: translateY(-80px);
+	transform: translateY(-60px);
 }
 
 
