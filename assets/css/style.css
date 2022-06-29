@@ -474,14 +474,14 @@ nav ul li a:hover:before {
   flex-direction: column; 
   width: 100%;  
   min-height: 100vh;  
+  box-shadow: var(--shadow);  
 }
 .container-principal {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: row;
-  /* height: calc(100vh - 90px); */
-  width: 990px;
+  flex-direction: row;  
+  width: 90%;
 }
 /* ---------------------SECTION PADRÃO---------------- */
 .header-section {
@@ -494,7 +494,7 @@ nav ul li a:hover:before {
   margin-bottom: 10px;
   font-family: 'Poppins', sans-serif;
   line-height: 1;
-  font-size: 30px;
+  font-size: 48px;
   color: var(--primary-text-color);
   position: relative;  
 }
@@ -540,6 +540,7 @@ nav ul li a:hover:before {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  margin: 0 20px;
 }
 .container-social-mobile {
   display: none;
@@ -592,19 +593,19 @@ nav ul li a:hover:before {
   }
 }
 .name-area {  
-  font-size: 45px;
+  font-size: 55px;
   font-weight: 500;
 }
 .name-area span {
-  font-size: 45px;
-  font-weight: 700;
+  font-size: 55px;
+  font-weight: 900;
   transition: color .5s ease;
   will-change: color;
   color:var(--second-text-color);
 }
 .work-area {
   margin: 20px 0px;
-  font-size: 30px;
+  font-size: 40px;
 }
 .work-area span {
   transition: color .5s ease;
@@ -615,11 +616,12 @@ nav ul li a:hover:before {
   color: #fff;
   padding: 10px 15px;
   margin: 20px 0;
-  border-radius: 20px;
+  border-radius: 12px;
   background: none;
   border: 2px solid var(--second-text-color); 
   position: relative;
   transition: .4s ease;
+  font-size: 25px;
 }
 .btn-contact:hover, .btn-contact-mobile:hover {
   transform: scale(1.1);
@@ -636,28 +638,36 @@ nav ul li a:hover:before {
   left: 0;
   z-index: -1;
   transition: .3s ease;
-  border-radius: 12px;
+  border-radius: 8px;
   opacity: 0;
+  border: 1px solid var(--second-text-color); 
 }
 .btn-contact:hover:before, .btn-contact-mobile:hover:before {
   content: '';
   width: 100%;
   opacity: 1;
+  border: 1px solid var(--second-text-color); 
 }
 .btn-contact-mobile {
   display: none;
 }
-.photo-area {
-  background: url(/assets/img/photo1.jpg) no-repeat center;
+.photo-area {  
   width: 250px;
   height: 250px;
   border-radius: 50%; 
-}
-.photo-area img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;  
+  padding: 10px 10px;
   border: 5px solid var(--second-text-color);
+  background: rgba(0,0,0, 0.6);
+  transition: 0.5s ease;
+}
+.photo-area:hover {
+  box-shadow: var(--shadow-colors);
+} 
+.photo-area img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;  
+  /* border: 5px solid var(--second-text-color); */
   background-size: cover;  
 }
  /* SETA CSS */
@@ -730,10 +740,12 @@ nav ul li a:hover:before {
 .container.About-me {
   padding-top: 50px;
   background: var(--third-bg-color);
+  margin-bottom: 2px;
+  padding-bottom:80px;
 }
 .about-area {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 40px;
   padding: 20px;
   max-width: 990px;
@@ -805,7 +817,7 @@ nav ul li a:hover:before {
   position: relative;
 	overflow: hidden;
 	transition: all 0.3s ease-out;
-  border-radius: 10px; 
+  border-radius: 08px;  
 }
 .ui-card img{
   width: 260px;
@@ -813,8 +825,8 @@ nav ul li a:hover:before {
 	transform: scale(1);
 	transition: all 0.3s ease-out;  
   box-shadow: inset var(--shadow-hover);
-  border: 1px solid var(--border-custom-menu);
-  border-radius: 10px;
+  /* border: 1px solid var(--border-custom-menu); */
+  border-radius: 08px;  
 }
 .ui-card:hover img{
 	transform: scale(1.2) translateY(-20px); 
@@ -852,7 +864,7 @@ nav ul li a:hover:before {
 	display: inline-block;
 	padding: 0 12px;
   margin-right:10px;
-	border-radius: 20px;
+	border-radius: 12px;
 	text-decoration: none;
   position: relative;
 	transition: all 0.3s ease 0.2s;
@@ -874,7 +886,7 @@ body.dark-theme .ui-card .description .demo-card{
   position: absolute;
   top: 0;
   left:0;
-  border-radius: 10px;
+  border-radius: 8px;
   z-index: -1;
   background: var(--second-text-color);
   transition: .4s ease;
@@ -884,14 +896,14 @@ body.dark-theme .ui-card .description .demo-card{
   content:'';
   width: 0;
   height: 100%;  
-  border-radius: 19px;  
+  border-radius:8px;  
   background: var(--second-text-color);
   opacity: 0;
 }
 .ui-card .description .github-card {
   padding: 05px 10px;
   margin: 20px 0;
-  border-radius: 20px;
+  border-radius: 12px;
   background: none;
   border: 2px solid var(--second-text-color); 
   position: relative;
@@ -912,7 +924,7 @@ body.dark-theme .ui-card .description .demo-card{
   left: 0;
   z-index: -1;
   transition: .3s ease;
-  border-radius: 12px;
+  border-radius: 8px;
   opacity: 0;
 }
 .github-card:hover:before{
@@ -939,9 +951,10 @@ body.dark-theme .ui-card .description .demo-card{
 .skills{
   display: flex;
   flex-direction: column;  
-  max-width: 990px;
+  max-width: 95%;
   height:100%;  
   padding:30px 0 40px 0;
+  justify-content: space-between;
 } 
 .skill-area {
   display: flex;
@@ -1251,6 +1264,8 @@ body.dark-theme .ui-card .description .demo-card{
   width: 150px;
   height: 150px;
   border:6px solid var(--second-text-color);
+  background: var(--primary-bg-color);
+  padding: 05px;
   border-radius: 50%;
   margin: auto;
   transition: 0.3s ease;
@@ -1273,6 +1288,7 @@ body.dark-theme .ui-card .description .demo-card{
 .testimonial-card:hover.testimonial-card img{
   border:6px solid #fff;
   transform: scale(1.1);
+  background: var(--second-text-color);
 }
 .testimonial-card:hover.testimonial-card p,.testimonial-card:hover.testimonial-card h3{
   opacity: 1;
@@ -1561,6 +1577,57 @@ footer{
 }
 
 /*----------------------- RESPONSIVIDADE ----------------------------*/
+
+@media (max-width:1120px) {
+  .container-principal {
+    flex-direction: row;
+    justify-content: space-between;    
+    align-items: center;  
+    text-align: center; 
+    flex-wrap: wrap;
+  } 
+  .container-left {  
+    justify-content: left;
+    text-align: left;
+    margin-right: 20px;
+  }
+  .container-social {
+    display: none;
+  }
+  .container-social-mobile {
+    flex-direction: row;
+    display: flex;   
+    margin: 80px 0;
+  }
+  .ola-mundo{
+    margin: 50px 0 20px 0 ;
+    font-size: 28px;
+  }
+  .name-area {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .name-area span {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  .work-area {
+    margin: 5px 0;
+    font-size: 33px;
+    margin-bottom: 30px;
+  }
+  .photo-area {  
+    margin: 30px 0 0 0 ; 
+    width: 210px;
+    height: 210px;
+  }
+  .photo-area img {
+    width: 180px;
+    height: 180px;    
+  }  
+}
+
 @media (max-width:960px) {
 
   nav ul {
@@ -1676,10 +1743,10 @@ footer{
     transform: rotate(-135deg);   
     top:-6px;
   }
-
+/* -----------------------------home area ------------------------- */
   .container-principal {
     flex-direction: row;
-    justify-content: center;    
+    justify-content: space-between;    
     align-items: center;  
     text-align: center; 
     flex-wrap: wrap;
@@ -1698,20 +1765,20 @@ footer{
     margin: 80px 0;
   }
   .ola-mundo{
-    margin: 50px 0 0 0 ;
+    margin: 50px 0 10px 0 ;
     font-size: 28px;
   }
   .name-area {
-    font-size: 33px;
-    font-weight: 700;
+    font-size: 42px;
+    font-weight: 600;
   }
   .name-area span {
-    font-size: 35px;
+    font-size: 42px;
     font-weight: 700;
   }
   .work-area {
     margin: 5px 0;
-    font-size: 25px;
+    font-size: 29px;
   }
   .photo-area {  
     margin: 30px 0 0 0 ; 
@@ -1719,8 +1786,8 @@ footer{
     height: 180px;
   }
   .photo-area img {
-    width: 180px;
-    height: 180px;    
+    width: 150px;
+    height: 150px;    
   }  
 }
 
@@ -1728,7 +1795,14 @@ footer{
   header {
     padding-right:50px;
   }
-
+  .name-area {
+    font-size: 37px;
+    font-weight: 600;
+  }
+  .name-area span {
+    font-size: 37px;
+    font-weight: 700;
+  }
   
   /* ------------------------------------ABOUT SECTION ----------------------------- */
   .about-area {
@@ -1793,8 +1867,8 @@ footer{
    height: 160px;
   }
   .photo-area img {
-    width: 160px;
-    height: 160px;    
+    width: 130px;
+    height: 130px;    
   }
   .seta {
     display: none;
